@@ -14,27 +14,37 @@ function getUserInformation() {
         {
             type: "input",
             name: "name",
-            message: "Please enter your name: "
+            message: "What's your name?"
         },
         {
             type: "input",
             name: "location",
-            message: "Please enter your location: "
+            message: "Where are you located?"
         },
         {
             type: "input",
             name: "bio",
-            message: "Please enter your bio: "
+            message: "Please enter a tag line or brief bio statement:"
         },
         {
             type: "input",
             name: "linkedIn",
-            message: "Please enter your linkedIn: "
+            message: "Your linkedIn page? "
         },
         {
             type: "input",
             name: "githubURL",
-            message: "Please enter your Git Hub URL: "
+            message: "Your Git Hub URL? "
+        },
+        {
+            type: "input",
+            name: "Title",
+            message: "What's the Title of your app or project?"
+        },
+        {
+            type: "input",
+            name: "demo",
+            message: "Enter a URL where a demo can be viewed (deployed link): "
         },
     ]).then(function (userInput) {
         // add the new quote with the corresponding author into our quote storage
