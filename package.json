@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/JenJayme/readme-generator/issues"
   },
-  "homepage": "https://github.com/JenJayme/readme-generator#readme"
+  "homepage": "https://github.com/JenJayme/readme-generator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.1",
+    "util": "^0.12.3"
+  }
 }
