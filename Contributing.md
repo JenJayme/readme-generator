@@ -78,3 +78,5 @@ discretion of the committer and master repo maintainers.
 
 * [General GitHub documentation](https://help.github.com/)
 * [GitHub pull request documentation](https://help.github.com/articles/creating-a-pull-request/)
+* [Horiseon-dev mailing list](https://groups.google.com/forum/#!forum/Horiseon-dev)
+* [Horiseon community slack](https://slack.Horiseon.com)

@@ -1,4 +1,53 @@
 
+==========================================================================
+//Generate markdown with json2md
+
+async function generateMarkdown2(data) {
+  const heading = `---\ntitle: ${data.name}\nthumbnail: '${data.imgSrc}'\n---\n\n`;
+
+  const md = await json2md([
+      {
+          h1: data.name
+      },
+      {
+          link: {
+              title: data.name,
+              source: data.link,
+          }
+      },
+      {
+          img: {
+              title: data.name,
+              source: data.imgSrc,
+          }
+      }
+  ]);
+
+  return `${heading}${md}`;
+}
+
+==========================================================================
+
+
+//Get README template content from the given templatePath
+@param {string} templatePath
+
+const getReadmeTemplate = async templatePath => {
+  const spinner = ora('Loading README template').start()
+
+  try {
+    const template = await promisify(fs.readFile)(templatePath, 'utf8')
+    spinner.succeed('README template loaded')
+    return template
+  } catch (err) {
+    spinner.fail('README template loading fail')
+    throw err
+  }
+}
+
+==========================================================================
+
+
 //Do I need to use a promise?  If so...
     .then(function(results) {
       return new Promise(function(resolve, reject) {

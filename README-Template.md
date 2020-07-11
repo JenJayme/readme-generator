@@ -38,8 +38,10 @@ _____
 
 ### Authors
 * **<% if (name) { -%>** 
-[LinkedIn](https://www.linkedin.com/jenjayme)
+[Github](<% if (introText) { -%>) | [LinkedIn](https://www.linkedin.com/jenjayme)
 
 ### Acknowledgments
-<% if (shoutOuts) { -%>
+* Thanks to Jerome Chenette for referring this page for work.
+* Shout out to UC Berkeley Coding Bootcamp and Trilogy for the support.
+* Special thanks to Fred Rudolfo for critical guidance and contributions during the process.
 ___
