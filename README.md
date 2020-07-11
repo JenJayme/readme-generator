@@ -2,7 +2,7 @@
 
 ![Screenshot](assets/images/ss-mm.PNG)
 
-Jen's Quick README-Maker is a simple friendly tool that automates the task of generating a README file to accompany your applications. After you've done all that hard work coding, shouldn't the README be easy?  This utility will prompt you for some tidbits of information and plug them into a professional-grade README file whih you can further edit.  Instructions, ingredients and acknowledgements below. Hope this makes someone's day a bit easier.  Happy coding!
+Jen's Quick README-Maker is a simple friendly tool that automates the task of generating a README file to accompany your apps. You've done all that hard work coding.  Now, let's make sure people can see it and understand it's true glory with a pro-level README, and let's save you some time while we're at it. This utility will prompt you for some tidbits of information and plug them into a professional-grade README file whih you can further edit.  Instructions, ingredients and acknowledgements below. Hope this makes someone's day a bit easier.  Happy coding!
 __________
 
 ## Getting Started

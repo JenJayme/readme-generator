@@ -91,7 +91,7 @@ We would like you to have more than 200 commits by graduation, so commit early a
 
 You are required to submit the following:
 
-* A video demonstrating the entirety of the app's functionality 
+* A video demonstrating the entirety of the app's functionality
 
 * A generated README.md file for a project repo.
 

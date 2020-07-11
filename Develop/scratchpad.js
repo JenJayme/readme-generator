@@ -1,4 +1,22 @@
 
+//Do I need to use a promise?  If so...
+    .then(function(results) {
+      return new Promise(function(resolve, reject) {
+              fs.writeFile(ASIN + '.json', JSON.stringify(results), function(err) {
+                 if (err) reject(err);
+                 else resolve(data);
+              });
+      });
+    }).then(function(results) {
+         console.log("results here: " + results)
+    }).catch(function(err) {
+         console.log("error here: " + err);
+    });
+
+// }
+
+==========================================================================
+
 function addQuotes() {
     // ask the user to input the author and then the quote
     inquirer.prompt([

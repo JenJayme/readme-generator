@@ -4,11 +4,14 @@ const util = require('util');
 const inquirer = require('inquirer');
 const axios = require('axios');
 
-const readFileAsync = util.promisify(fs.readFile);
-const writeFileAsync = util.promisify(fs.writeFile);
+// const readFileAsync = util.promisify(fs.readFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 //ARRAY TO HOLD PERSONAL DATA
 var userData = [];
+
+//ARRAY TO HOLD README FILE CONTENT
+const fileContent = [];
 
 //ARRAY OF OBJECTS FOR QUESTIONS, with input types and var names for key values. 
 const questions = [
@@ -76,19 +79,44 @@ function getUserInformation() {
         {
             type: "input",
             name: "githubURL",
-            message: "Your Git Hub URL? "
+            message: "Enter the link to the Repo on Git Hub: "
         },
         {
             type: "input",
             name: "title",
-            message: "What's the title of your app or project?"
+            message: "What's the title of your app or project? "
         },
         {
             type: "input",
             name: "demo",
-            message: "Enter a URL where a demo can be viewed (deployed link): "
+            message: "Enter the link where a demo can be viewed (deployed link): "
         },
-    //add table of contents, installation, usage, license, contributing, tests, questions
+        {
+            type: "input",
+            name: "introText",
+            message: "Enter a few sentences to introduce the project and it's use: "
+        },
+        {
+            type: "input",
+            name: "instructions",
+            message: "Enter instructions to install and run the app: "
+        },
+        {
+            type: "input",
+            name: "screenshot",
+            message: "Enter the relative path for your screenshot: "
+        },
+        {
+            type: "input",
+            name: "example",
+            message: "Enter the relative path for your example gif: "
+        },
+        {
+            type: "input",
+            name: "shoutOuts",
+            message: "Any acknowledgements to include? "
+        },
+    //add instructions, installation, license, contributing, tests, questions
     ]).then(function (userInput) {
         // add the new quote with the corresponding author into our quote storage
         userData.push({
@@ -99,17 +127,45 @@ function getUserInformation() {
             githubURL: userInput.githubURL,
             title: userInput.title,
             demo: userInput.demo,
+            introText: userInput.introText,
+            instructions: userInput.instructions,
+            screenshot: userInput.screenshot,
+            example: userInput.example
             //add table of contents, installation, usage, license, contributing, tests, questions
         });
         console.log(userData);
     })
-}
+};
 
-// function writeToFile(fileName, data) {
-// }
+// writeFile function with filename, content and callback function
+function writeToFile(fileName, data) {
+
+    fs.writeFile('NewREADME.md', 'NEW CONTENT - is this working?', function (err) {
+    if (err) throw err;
+    console.log('File is created successfully.');
+  }); 
+
+//Get README template content from the given templatePath
+ @param {string} templatePath
+
+ const getReadmeTemplate = async templatePath => {
+   const spinner = ora('Loading README template').start()
+ 
+   try {
+     const template = await promisify(fs.readFile)(templatePath, 'utf8')
+     spinner.succeed('README template loaded')
+     return template
+   } catch (err) {
+     spinner.fail('README template loading fail')
+     throw err
+   }
+ }
+
+
+};
 
 function init() {
-    getUserInformation();
+    getUserInformation().then(writeToFile())
 }
 
 init();
