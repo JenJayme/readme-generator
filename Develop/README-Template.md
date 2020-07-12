@@ -31,9 +31,6 @@ __________________
 * [VS Code](https://code.visualstudio.com/)
 * [Axios](https://www.npmjs.com/package/axios)
 * [Inquirer](https://www.npmjs.com/package/inquirer)
-* [Materialize](https://materializecss.com/)
-* [jQuery](https://jquery.com/)
-
 _____
 
 ### Authors
