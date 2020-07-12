@@ -1,49 +1,88 @@
+
+
+<style>
+
+hr {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  };
+
+img[src*="#visuals"] {
+    width:600px;
+ };
+
+img[src*="#icons"] {
+    height: 60px;
+    float: left;
+    clear: right;
+};
+
+img[src*="#profile-pic"] {
+    height: 70px;
+    float: left;
+    display: block;
+    border-radius: 50%
+};
+
+img[src*=#li-logo"] {
+    height: 15px;
+};
+ </style>
+
 # Jen's Quick README-Maker
+![Travis Status](https://img.shields.io/travis/:jenjayme/:readme-generator)
+![License](https://img.shields.io/github/license/jenjayme/readme-generator)
+![Inquirer](https://img.shields.io/npm/v/inquirer)
+<hr>
 
-![Screenshot](assets/images/ss-mm.PNG)
+This friendly tool automates the process of creating a README file to accompany your apps.
 
-Jen's Quick README-Maker is a simple friendly tool that automates the task of generating a README file to accompany your apps. You've done all that hard work coding.  Now, let's make sure people can see it and understand it's true glory with a pro-level README, and let's save you some time while we're at it. This utility will prompt you for some tidbits of information and plug them into a professional-grade README file whih you can further edit.  Instructions, ingredients and acknowledgements below. Hope this makes someone's day a bit easier.  Happy coding!
-__________
+<hr>
 
-## Getting Started
+## Contents | Quick Links
+[Getting Started](#start)     |     [Instructions](#instruct)     |     [Demo](#demo)     |     [Built With](#built)     |     [Author](#author)     |     [Visuals](#visuals)     |     [Contributing & Tests](Contributing.md)     |     [Contact](#contact)
 
-You can view a demo here: 
-* [Jen's Quick README-Maker demo](https://jenjayme.github.io/readme-generator/)
+<hr>
 
-Download the app for your phone here:
-* [Google Play for Androids](https://play.google.com/apps) 
-* [iStore for iPhones](https://www.apple.com/ios/app-store/)
+## [Getting Started](#start)
 
-Enter the information when prompted, keeping in mind that what you enter will be inserted into your README but can be edited later.
+### Download the app from Git Hub here:
+* [Repo URL](https://github.com/jenjayme/readme-generator/)
 
-### Plans to Evolve
+### To run: 
+* From the command line, run index.js
 
-In future versions, we plan to ...
-__________
+### You can view a demo here: 
+* [Deployed URL](https://jenjayme.github.io/readme-generator/#demo)
 
-## Gif Example & [Deployed Link](https://gabesucich.github.io/Project1_CGJK/)
+<hr>
 
-![Screenshot](assets/images/sr-pm.gif)
+## [Visuals](#visuals)
 
-__________________
+![Screenshot](images/screenshot.png#visuals)
 
-#### Built With
+![Example Gif](images/example.gif#visuals)
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [VS Code](https://code.visualstudio.com/)
-* [Axios](https://www.npmjs.com/package/axios)
-* [Inquirer](https://www.npmjs.com/package/inquirer)
-* [Materialize](https://materializecss.com/)
-* [jQuery](https://jquery.com/)
+<hr>
 
-_____
+## [Built With](#built)
+![HTML5, CSS & Javascript](images/ic-html-css-js.png)
+![VS Code](images/ic-vscode.png#icons)
+![Markdown](images/ic-md.png#icons)
 
-### Authors
-* **Jen Jayme** [Portfolio Site](www.jaymedev.com) | [Github](https://github.com/jenjayme) | [LinkedIn](https://www.linkedin.com/jenjayme)
+<hr>
 
-### Acknowledgments
-* Thanks to Jerome Chenette for referring this page for work.
-* Shout out to UC Berkeley Coding Bootcamp and Trilogy for the support.
-* Special thanks to Fred Rudolfo for critical guidance and contributions during the process.
-___
+## [Author](#author)
+Jen Jayme
+
+web developer
+
+Novato, CA
+
+![LinkedIn](images/li-logo.png#li-logo)[/JenJayme](https://www.linkedin.com/in/jenjayme)
+
+## Questions
+For questions or to discuss collaborations on this or other projects, contact me at:jeniferjayme@gmail.com(#contact)
+
+ 

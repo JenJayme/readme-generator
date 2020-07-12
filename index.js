@@ -112,9 +112,9 @@ function getUserInformation() {
 function writeFile(userData) {
     var userDataStr = generateMarkdown(userData);
 
-    fs.writeFile('NewREADME.md', userDataStr, function (err) {
+    fs.writeFile('README.md', userDataStr, function (err) {
         if (err) throw err;
-        console.log('File is created successfully.');
+        console.log('Your README File has been created! You will find it in the folder where you ran the start command.');
     });
 };
 
@@ -129,28 +129,28 @@ hr {
     clear: both;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
+  };
 
 img[src*="#visuals"] {
     width:600px;
- }
+ };
 
-img[src*=#icons"] {
+img[src*="#icons"] {
     height: 60px;
     float: left;
-    clear: both;
-}
+    clear: right;
+};
 
 img[src*="#profile-pic"] {
     height: 70px;
     float: left;
     display: block;
     border-radius: 50%
-}
+};
 
-img[src*=#li-logo"] {
+img[src*="#li-logo"] {
     height: 15px;
-}
+};
  </style>
 
 # ${userData.title}
@@ -197,16 +197,14 @@ ${userData.introText}
 <hr>
 
 ## [Author](#author)
-${userData.name}\
-${userData.bio}\
+${userData.name}\n
+${userData.bio}\n
 ${userData.location}\n
 ![LinkedIn](images/li-logo.png#li-logo)[/JenJayme](https://www.linkedin.com/in/jenjayme)
 
 ## Questions
 For questions or to discuss collaborations on this or other projects, contact me at:\
 ${userData.contact}(#contact)
-
-![Profile-Pic](images/profile-pic.png#profile-pic)
 
  `;
 }
