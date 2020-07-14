@@ -7,7 +7,7 @@ const inquirer = require('inquirer');
 // const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//ARRAY TO HOLD PERSONAL DATA
+//OBJECT TO HOLD PERSONAL DATA
 const userData = {};
 
 //ARRAY TO HOLD README FILE CONTENT
