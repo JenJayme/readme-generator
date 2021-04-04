@@ -6,28 +6,28 @@ hr {
     clear: both;
     padding-top: 20px;
     padding-bottom: 20px;
-  };
+  }
 
 img[src*="#visuals"] {
     width:600px;
- };
+ }
 
-img[src*="#icons"] {
+img[src*=#icons"] {
     height: 60px;
     float: left;
-    clear: right;
-};
+    clear: both;
+}
 
 img[src*="#profile-pic"] {
     height: 70px;
     float: left;
     display: block;
     border-radius: 50%
-};
+}
 
 img[src*=#li-logo"] {
     height: 15px;
-};
+}
  </style>
 
 # Jen's Quick README-Maker
@@ -36,7 +36,7 @@ img[src*=#li-logo"] {
 ![Inquirer](https://img.shields.io/npm/v/inquirer)
 <hr>
 
-This friendly tool automates the process of creating a README file to accompany your apps.
+Jen's Quick README-Maker is a simple friendly tool that automates the task of generating a README file to accompany your apps. You've done all that hard work coding.  Now, let's make sure people can see it and understand it's true glory with a pro-level README, and save you some time while we're at it. 
 
 <hr>
 
@@ -50,8 +50,8 @@ This friendly tool automates the process of creating a README file to accompany 
 ### Download the app from Git Hub here:
 * [Repo URL](https://github.com/jenjayme/readme-generator/)
 
-### To run: 
-* From the command line, run index.js
+### [Instructions](#instruct) 
+* From the command line, run node index.js
 
 ### You can view a demo here: 
 * [Deployed URL](https://jenjayme.github.io/readme-generator/#demo)
@@ -67,22 +67,20 @@ This friendly tool automates the process of creating a README file to accompany 
 <hr>
 
 ## [Built With](#built)
-![HTML5, CSS & Javascript](images/ic-html-css-js.png)
+![HTML5, CSS & Javascript](images/ic-html-css-js.png#icons)
 ![VS Code](images/ic-vscode.png#icons)
 ![Markdown](images/ic-md.png#icons)
 
 <hr>
 
 ## [Author](#author)
-Jen Jayme
-
-web developer
-
-Novato, CA
+Jen Jaymeweb developerNovato, CA
 
 ![LinkedIn](images/li-logo.png#li-logo)[/JenJayme](https://www.linkedin.com/in/jenjayme)
 
 ## Questions
 For questions or to discuss collaborations on this or other projects, contact me at:jeniferjayme@gmail.com(#contact)
+
+![Profile-Pic](images/profile-pic.png#profile-pic)
 
  
